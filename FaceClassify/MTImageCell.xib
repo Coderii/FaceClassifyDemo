@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="gTV-IL-0wX" customClass="MTImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="182"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kNH-Bc-Vwl">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="kNH-Bc-Vwl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RMp-rC-ywK"/>
+                <constraint firstAttribute="bottom" secondItem="kNH-Bc-Vwl" secondAttribute="bottom" id="nzK-hX-Lc9"/>
+                <constraint firstAttribute="trailing" secondItem="kNH-Bc-Vwl" secondAttribute="trailing" id="ph7-c6-hlQ"/>
+                <constraint firstItem="kNH-Bc-Vwl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pns-NF-tNc"/>
+            </constraints>
+            <size key="customSize" width="185" height="182"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="kNH-Bc-Vwl"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="RMp-rC-ywK"/>
+                    <exclude reference="nzK-hX-Lc9"/>
+                    <exclude reference="ph7-c6-hlQ"/>
+                    <exclude reference="pns-NF-tNc"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="kNH-Bc-Vwl"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="RMp-rC-ywK"/>
+                    <include reference="nzK-hX-Lc9"/>
+                    <include reference="ph7-c6-hlQ"/>
+                    <include reference="pns-NF-tNc"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageview" destination="kNH-Bc-Vwl" id="46x-GU-VSJ"/>
+            </connections>
+            <point key="canvasLocation" x="224.5" y="334"/>
+        </collectionViewCell>
+    </objects>
+</document>

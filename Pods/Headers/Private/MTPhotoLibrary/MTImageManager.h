@@ -1,0 +1,1 @@
+../../../MTPhotoLibrary/MTPhotoLibrary/Main/MTImageManager.h
